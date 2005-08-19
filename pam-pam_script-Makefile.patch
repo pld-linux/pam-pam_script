@@ -1,0 +1,12 @@
+diff -Nur o.pam-script-0.1.3/Makefile n.pam-script-0.1.3/Makefile
+--- o.pam-script-0.1.3/Makefile	2005-08-08 22:28:33.000000000 +0200
++++ n.pam-script-0.1.3/Makefile	2005-08-11 16:43:57.172816048 +0200
+@@ -1,7 +1,7 @@
+ VERSION		= 0.1.3
+ CC		= gcc
+ DEBUG		= -g
+-CFLAGS		= -Wall -pedantic -fPIC
++override CFLAGS	+= -Wall -pedantic -fPIC
+ SHARED		= -shared 
+ DESTDIR 	= /
+ prefix  	= /usr
