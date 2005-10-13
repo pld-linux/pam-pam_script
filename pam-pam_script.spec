@@ -4,12 +4,12 @@
 Summary:	PAM module for executing scripts
 Summary(pl):	Modu³ PAM do wywo³ywania skryptów
 Name:		pam-%{modulename}
-Version:	0.1.4
+Version:	0.1.5
 Release:	0.1
 License:	GPL
 Group:		Applications/System
 Source0:	http://www.bofs.co.za/~iburger/pam_script/pam-script-%{version}.tar.gz
-# Source0-md5:	0babf729b533a0d62ba38f91e17820e2
+# Source0-md5:	7ba4ba54e71298a4238b2191823c2eb6
 Patch0:		%{name}-Makefile.patch
 URL:		http://www.bofs.co.za/~iburger/pam_script/index.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
