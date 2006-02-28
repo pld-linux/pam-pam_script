@@ -1,5 +1,5 @@
 #
-%define		modulename	pam_script	
+%define		modulename	pam_script
 #
 Summary:	PAM module for executing scripts
 Summary(pl):	Modu³ PAM do wywo³ywania skryptów
