@@ -35,7 +35,7 @@ i/lub zamkniêciu sesji przy u¿yciu PAM.
 rm -rf $RPM_BUILD_ROOT
 
 install -D pam_script.so $RPM_BUILD_ROOT/%{_lib}/security/pam_script.so
-install -D pam-script.5 $RPM_BUILD_ROOT/%{_mandir}/man5/pam_script.5
+install -D pam-script.5 $RPM_BUILD_ROOT%{_mandir}/man5/pam_script.5
 
 %clean
 rm -rf $RPM_BUILD_ROOT
