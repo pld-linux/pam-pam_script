@@ -12,6 +12,7 @@ Source0:	http://www.bofs.co.za/~iburger/pam_script/pam-script-%{version}.tar.gz
 # Source0-md5:	b9041c84649e94373564e8edd14ffbec
 Patch0:		%{name}-Makefile.patch
 URL:		http://www.bofs.co.za/~iburger/pam_script/index.html
+BuildRequires:	pam-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
