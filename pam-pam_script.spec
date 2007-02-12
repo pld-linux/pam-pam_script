@@ -2,7 +2,7 @@
 %define		modulename	pam_script
 #
 Summary:	PAM module for executing scripts
-Summary(pl):	Modu≥ PAM do wywo≥ywania skryptÛw
+Summary(pl.UTF-8):   Modu≈Ç PAM do wywo≈Çywania skrypt√≥w
 Name:		pam-%{modulename}
 Version:	0.1.6
 Release:	0.1
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 pam_script is a module which allows to execute scripts after opening
 and/or closing a session using PAM.
 
-%description -l pl
-pam_script to modu≥ umoøliwiaj±cy wywo≥ywanie skryptÛw po otwarciu
-i/lub zamkniÍciu sesji przy uøyciu PAM.
+%description -l pl.UTF-8
+pam_script to modu≈Ç umo≈ºliwiajƒÖcy wywo≈Çywanie skrypt√≥w po otwarciu
+i/lub zamkniƒôciu sesji przy u≈ºyciu PAM.
 
 %prep
 %setup -q -n pam-script-%{version}
