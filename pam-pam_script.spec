@@ -2,7 +2,7 @@
 %define		modulename	pam_script
 #
 Summary:	PAM module for executing scripts
-Summary(pl.UTF-8):   Moduł PAM do wywoływania skryptów
+Summary(pl.UTF-8):	Moduł PAM do wywoływania skryptów
 Name:		pam-%{modulename}
 Version:	0.1.6
 Release:	0.1
