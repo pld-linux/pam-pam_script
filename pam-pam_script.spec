@@ -30,7 +30,7 @@ i/lub zamknięciu sesji przy użyciu PAM.
 %build
 %{__make} \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags}"
+	CFLAGS="%{rpmcflags} -include syslog.h"
 
 %install
 rm -rf $RPM_BUILD_ROOT
