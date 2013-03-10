@@ -4,14 +4,14 @@
 Summary:	PAM module for executing scripts
 Summary(pl.UTF-8):	Moduł PAM do wywoływania skryptów
 Name:		pam-%{modulename}
-Version:	0.1.6
+Version:	0.1.12
 Release:	0.1
 License:	GPL
 Group:		Applications/System
-Source0:	http://www.bofs.co.za/~iburger/pam_script/pam-script-%{version}.tar.gz
-# Source0-md5:	b9041c84649e94373564e8edd14ffbec
+Source0:	 http://www.upfrontsystems.co.za/Members/izak/libpam-script_%{version}.tar.gz
+# Source0-md5:	6607c1093612269ecf539c404b89cf73
 Patch0:		%{name}-Makefile.patch
-URL:		http://www.bofs.co.za/~iburger/pam_script/index.html
+URL:	    http://www.upfrontsystems.co.za/Members/izak
 BuildRequires:	pam-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,7 +24,7 @@ pam_script to moduł umożliwiający wywoływanie skryptów po otwarciu
 i/lub zamknięciu sesji przy użyciu PAM.
 
 %prep
-%setup -q -n pam-script-%{version}
+%setup -q -n libpam-script-%{version}
 %patch0 -p1
 
 %build
@@ -36,13 +36,13 @@ i/lub zamknięciu sesji przy użyciu PAM.
 rm -rf $RPM_BUILD_ROOT
 
 install -D pam_script.so $RPM_BUILD_ROOT/%{_lib}/security/pam_script.so
-install -D pam-script.5 $RPM_BUILD_ROOT%{_mandir}/man5/pam_script.5
+install -D pam_script.5 $RPM_BUILD_ROOT%{_mandir}/man5/pam_script.5
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changelog README examples/kde
+%doc README examples/kde
 %attr(755,root,root) /%{_lib}/security/*
 %{_mandir}/man?/*
